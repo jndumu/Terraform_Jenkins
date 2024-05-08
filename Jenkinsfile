@@ -17,18 +17,17 @@ environment {
      }
     stage('SonarQube analysis') {
     environment {
-       scannerHome = tool 'Josie-sonar-scanner'
+       scannerHome = tool 'valaxy-sonar-scanner'
     }
     steps{
-    withSonarQubeEnv('Josie-sonarqube-server') { // If you have configured more than one global server connection, you can specify its name
+    withSonarQubeEnv('valaxy-sonarqube-server') { // If you have configured more than one global server connection, you can specify its name
       sh "${scannerHome}/bin/sonar-scanner"
     }
     }
     }
     }
-<<<<<<< HEAD
+
 }
 
-=======
-}
->>>>>>> parent of cd6be9e (testing this out)
+
+
