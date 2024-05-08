@@ -26,5 +26,9 @@ environment {
     }
     }
     }
+<<<<<<< HEAD
 }
 
+=======
+}
+>>>>>>> parent of cd6be9e (testing this out)
